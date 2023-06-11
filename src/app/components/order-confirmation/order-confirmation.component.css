@@ -1,0 +1,17 @@
+.confirmation-container {
+  align-items: center;
+  justify-content: center;
+  margin-top: 8%;
+  flex-direction: column;
+}
+
+.confirmation-header {
+  color: #33e5bc;
+  margin-bottom: 30px;
+}
+
+.confirmation-body {
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}

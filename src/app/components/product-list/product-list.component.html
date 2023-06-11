@@ -1,0 +1,4 @@
+<div class="product-item d-flex">
+    <app-product-item *ngFor="let product of productList" [product]="product" (cartItem)="addProductToCart($event)">
+    </app-product-item>
+</div>
