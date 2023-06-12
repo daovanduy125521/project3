@@ -25,4 +25,8 @@ export class ProductService {
     this.cartList = [];
     return this.cartList;
   }
+
+  removeItem(i: CartItem) {
+    this.cartList = this.cartList.filter((item) => item.id !== i.id);
+  }
 }

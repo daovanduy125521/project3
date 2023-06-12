@@ -31,6 +31,13 @@ export class ShppingCartComponent implements OnInit {
 
   changeAmount(item: CartItem) {
     this.totalMoney = this.getTotalMoney(this.cartList);
+    if (item.amount === 0) {
+      this.productService.removeItem(item);
+      this.cartList = this.productService.cartList;
+      setTimeout(() => {
+        alert('The product has been removed from the store');
+      }, 10);
+    }
   }
 
   getTotalMoney(cartList: CartItem[]) {
